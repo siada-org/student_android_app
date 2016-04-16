@@ -1,0 +1,30 @@
+<resources>
+    <!--Заголовки окон-->
+    <string name="app_name">Студент</string>
+    <string name="profile_window">Профиль</string>
+
+    <!--Строки-->
+    <string name="nick">Ник</string>
+    <string name="user_name">Имя</string>
+    <string name="user_family">Фамилия</string>
+    <string name="user_city">Город</string>
+    <string name="user_vuz">ВУЗ</string>
+    <string name="user_bdate">День рождения</string>
+    <string name="user_status">Отношения</string>
+    <string name="user_about">О себе</string>
+
+    <string name="side_nav_item_profile">Профиль</string>
+    <string name="side_nav_item_friends">Друзья</string>
+    <string name="side_nav_item_chat">Чат</string>
+    <string name="side_nav_item_pm">Личные сообщения</string>
+    <string name="side_nav_item_actions">Акции</string>
+    <string name="side_nav_item_files">HELPer</string>
+    <string name="side_nav_item_map">Карта студента</string>
+    <string name="side_nav_item_settings">Настройки</string>
+    <string name="side_nav_item_search">Поиск</string>
+
+    <string name="new_font">fonts/Custom.ttf</string>
+    <string name="image_chooser">Выберите источник</string>
+
+
+</resources>
