@@ -2,6 +2,7 @@ package com.ds.student114;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Typeface;
@@ -59,7 +60,7 @@ class MyWebViewClient3 extends WebViewClient {
 }
 
 
-public class MainWindow extends AppCompatActivity {
+public class MainWindow extends AppCompatActivity implements LocationListener {
 
     public static final int INPUT_FILE_REQUEST_CODE = 1;
     public static final String EXTRA_FROM_NOTIFICATION = "EXTRA_FROM_NOTIFICATION";
@@ -74,37 +75,25 @@ public class MainWindow extends AppCompatActivity {
     private WebView mWebView;
     private ValueCallback<Uri[]> mFilePathCallback;
     private String mCameraPhotoPath;
-    private LocationManager locationManager;
-    private LocationListener locationListener = new LocationListener() {
 
-        @Override
-        public void onLocationChanged(Location location) {
-            try {
-                showLocation(location);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-
-        @Override
-        public void onProviderDisabled(String provider) {
-            checkEnabled();
-        }
-
-        @Override
-        public void onProviderEnabled(String provider) {
-            checkEnabled();
-        }
-
-        @Override
-        public void onStatusChanged(String provider, int status, Bundle extras) {
-        }
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.window_main);
+
+        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
 
         final ProgressBar Pbar;
         final FrameLayout Back;
@@ -122,20 +111,6 @@ public class MainWindow extends AppCompatActivity {
 
         final Typeface typeface2 = Typeface.createFromAsset(getAssets(), "fonts/ur.ttf");
 
-        locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,
-                1000 * 10, 10, locationListener);
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            return;
-        }
 
         result = new DrawerBuilder()
                 .withActivity(this)
@@ -925,24 +900,46 @@ public class MainWindow extends AppCompatActivity {
         }
     }
 
-    public void showLocation(Location location) throws IOException {
-        if (location == null)
-            return;
-        if (location.getProvider().equals(LocationManager.GPS_PROVIDER)) {
-            String lat = String.valueOf(location.getLatitude());
-            String lng = String.valueOf(location.getLongitude());
-            URL urlr = new URL("http://student-app.ru/map-res.php?lat=" + lat + "&lng=" + lng);
-            HttpURLConnection connection = (HttpURLConnection) urlr.openConnection();
-            if (connection.getResponseCode() == HttpURLConnection.HTTP_OK) {
-                String TAG = "ГУД";
-                Log.d(TAG, String.valueOf(urlr));
-            } else {
-                String TAG = "BAD";
-                Log.d(TAG, String.valueOf(urlr));
+    @Override
+    public void onLocationChanged(Location location){
+        String latitude = String.valueOf(location.getLatitude());
+        String longitude = String.valueOf(location.getLongitude());
+
+        URL urld;
+
+        try{
+            String strat = "http://student-app.ru/map-res.php?lat="+latitude+"&lng="+longitude;
+            urld = new URL(strat);
+            HttpURLConnection conn = (HttpURLConnection) urld.openConnection();
+            conn.setReadTimeout(15000);
+            conn.setConnectTimeout(15000);
+            conn.setRequestMethod("GET");
+            conn.setDoInput(true);
+            conn.setDoOutput(true);
+            int responseCode=conn.getResponseCode();
+            if (responseCode == HttpURLConnection.HTTP_OK) {
+                Log.i("Geo_Location", strat);
+                }else{
+                Log.i("Geo_Location", "FALSE");
             }
+            //Log.i("Geo_Location", strat);
+        }catch(Exception e){
+            e.printStackTrace();
         }
     }
 
-    private void checkEnabled() {
+    @Override
+    public void onStatusChanged(String provider, int status, Bundle extras) {
+
+    }
+
+    @Override
+    public void onProviderEnabled(String provider) {
+
+    }
+
+    @Override
+    public void onProviderDisabled(String provider) {
+
     }
 }
