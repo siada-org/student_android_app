@@ -6,35 +6,30 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9aceb583-2b19-4cac-a00b-2db7ca9a0ebf" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/assets/fonts/sp.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/m_actions.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/m_chat.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/m_friends.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/m_help.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/m_options.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/m_pm.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/m_profile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/m_search.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/menu_icon.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/app_logo.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/app_logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android_app.iml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/iconics_core_2_5_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/iconics_core_2_5_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/materialdrawer_4_5_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/materialdrawer_4_5_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/picasso_2_5_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/picasso_2_5_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_23_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_23_1_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_23_1_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/ds/student114/MainWindow.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/ds/student114/MainWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/window_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/window_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/color.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/color.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <ignored path="android_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,12 +60,44 @@
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ds/student114/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62822086">
-              <caret line="659" column="21" selection-start-line="659" selection-start-column="21" selection-end-line="659" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.59090906">
+              <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5041#40820#0" expanded="true" />
+                <element signature="e#4895#4925#0" expanded="true" />
+                <element signature="e#5060#5090#0" expanded="true" />
+                <element signature="e#5220#5245#0" expanded="true" />
+                <element signature="e#5377#5404#0" expanded="true" />
+                <element signature="e#5539#5569#0" expanded="true" />
+                <element signature="e#5701#5729#0" expanded="true" />
+                <element signature="e#5861#5887#0" expanded="true" />
+                <element signature="e#6022#6053#0" expanded="true" />
+                <element signature="e#6187#6216#0" expanded="true" />
+                <element signature="e#6301#41978#0" expanded="true" />
+                <element signature="e#11548#11581#0" expanded="true" />
+                <element signature="e#14427#14460#0" expanded="true" />
+                <element signature="e#21133#21166#0" expanded="true" />
+                <element signature="e#24260#24293#0" expanded="true" />
+                <element signature="e#33766#33799#0" expanded="true" />
+                <element signature="e#36645#36678#0" expanded="true" />
+                <element signature="e#41977#41978#0" expanded="true" />
+                <element signature="e#45482#45515#0" expanded="true" />
+                <element signature="e#47617#47650#0" expanded="true" />
+                <element signature="e#51994#51995#0" expanded="true" />
+                <element signature="e#52032#52033#0" expanded="true" />
+                <element signature="e#52108#52109#0" expanded="true" />
+                <element signature="e#52146#52147#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,8 +105,8 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="79" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
+            <state vertical-scroll-proportion="-11.769231">
+              <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -106,7 +133,7 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="android_app" />
+              <option name="name" value="student_android_app2" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
@@ -117,7 +144,7 @@
                 <option name="path" value="$PROJECT_DIR$/app" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
-                <option name="name" value="android_app" />
+                <option name="name" value="student_android_app2" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
             </list>
@@ -131,22 +158,22 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'android_app'." />
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'student_android_app2'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'android_app'. [incubating]" />
+                <option name="description" value="Displays the components produced by root project 'student_android_app2'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'android_app'." />
+                <option name="description" value="Displays all dependencies declared in root project 'student_android_app2'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'android_app'." />
+                <option name="description" value="Displays the insight into a specific dependency in root project 'student_android_app2'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
@@ -161,22 +188,22 @@
                 <option name="name" value="init" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'android_app'. [incubating]" />
+                <option name="description" value="Displays the configuration model of root project 'student_android_app2'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'android_app'." />
+                <option name="description" value="Displays the sub-projects of root project 'student_android_app2'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'android_app'." />
+                <option name="description" value="Displays the properties of root project 'student_android_app2'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'android_app' (some of the displayed tasks may belong to subprojects)." />
+                <option name="description" value="Displays the tasks runnable from root project 'student_android_app2' (some of the displayed tasks may belong to subprojects)." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
               </ExternalTaskPojo>
@@ -1349,7 +1376,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4368176774853" />
+        <entry key="$PROJECT_DIR$" value="4383454085573" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1536,14 +1563,15 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.1.1/appcompat-v7-23.1.1.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/materialdrawer/4.5.5/7e2b413b42cc4d98fe7831f0c0c85c109f56abdd/materialdrawer-4.5.5.aar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.1.1/support-v4-23.1.1.aar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/23.1.1/recyclerview-v7-23.1.1.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/materialize/0.5.1/a77af33caec2ca288f328bf2e2ea10e123338d3/materialize-0.5.1.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz/iconics-core/2.5.0/27097b77d488e8c4316659b13702dfd27ab5a4a7/iconics-core-2.5.0.aar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar" />
-                            <option value="$MODULE_DIR$/libs/Android-AdvancedWebView.jar" />
                             <option value="$MODULE_DIR$/libs/picasso-2.5.2.jar" />
+                            <option value="$MODULE_DIR$/libs/Android-AdvancedWebView.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/app" />
@@ -1631,6 +1659,7 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ds/student114/MainWindow.java" />
       </list>
     </option>
@@ -1638,8 +1667,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="2576" />
-    <option name="height" value="1416" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -1666,7 +1695,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1687,14 +1719,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="device.picker.selection" value="169.254.76.233:5555" />
+    <property name="device.picker.selection" value="TestDevice_720_API_22" />
   </component>
   <component name="RunManager" selected="Android Application.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1729,6 +1758,39 @@
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <Native>
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Native>
+      <Java />
+      <Hybrid>
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Hybrid>
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1770,6 +1832,48 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -1806,6 +1910,34 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
     <configuration default="false" name="app" type="AndroidRunConfigurationType" factoryName="Android Application" activateToolWindowBeforeRun="false">
       <module name="app" />
       <option name="DEPLOY" value="true" />
@@ -1820,7 +1952,7 @@
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
       <option name="PREFERRED_AVD" value="" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
@@ -1870,16 +2002,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298887" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298887" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38153505" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298887" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1887,7 +2019,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18084261" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18070363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1924,7 +2056,29 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5041#40820#0" expanded="true" />
+            <element signature="e#4895#4925#0" expanded="true" />
+            <element signature="e#5060#5090#0" expanded="true" />
+            <element signature="e#5220#5245#0" expanded="true" />
+            <element signature="e#5377#5404#0" expanded="true" />
+            <element signature="e#5539#5569#0" expanded="true" />
+            <element signature="e#5701#5729#0" expanded="true" />
+            <element signature="e#5861#5887#0" expanded="true" />
+            <element signature="e#6022#6053#0" expanded="true" />
+            <element signature="e#6187#6216#0" expanded="true" />
+            <element signature="e#6301#41978#0" expanded="true" />
+            <element signature="e#11548#11581#0" expanded="true" />
+            <element signature="e#14427#14460#0" expanded="true" />
+            <element signature="e#21133#21166#0" expanded="true" />
+            <element signature="e#24260#24293#0" expanded="true" />
+            <element signature="e#33766#33799#0" expanded="true" />
+            <element signature="e#36645#36678#0" expanded="true" />
+            <element signature="e#41977#41978#0" expanded="true" />
+            <element signature="e#45482#45515#0" expanded="true" />
+            <element signature="e#47617#47650#0" expanded="true" />
+            <element signature="e#51994#51995#0" expanded="true" />
+            <element signature="e#52032#52033#0" expanded="true" />
+            <element signature="e#52108#52109#0" expanded="true" />
+            <element signature="e#52146#52147#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1951,7 +2105,29 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5041#40820#0" expanded="true" />
+            <element signature="e#4895#4925#0" expanded="true" />
+            <element signature="e#5060#5090#0" expanded="true" />
+            <element signature="e#5220#5245#0" expanded="true" />
+            <element signature="e#5377#5404#0" expanded="true" />
+            <element signature="e#5539#5569#0" expanded="true" />
+            <element signature="e#5701#5729#0" expanded="true" />
+            <element signature="e#5861#5887#0" expanded="true" />
+            <element signature="e#6022#6053#0" expanded="true" />
+            <element signature="e#6187#6216#0" expanded="true" />
+            <element signature="e#6301#41978#0" expanded="true" />
+            <element signature="e#11548#11581#0" expanded="true" />
+            <element signature="e#14427#14460#0" expanded="true" />
+            <element signature="e#21133#21166#0" expanded="true" />
+            <element signature="e#24260#24293#0" expanded="true" />
+            <element signature="e#33766#33799#0" expanded="true" />
+            <element signature="e#36645#36678#0" expanded="true" />
+            <element signature="e#41977#41978#0" expanded="true" />
+            <element signature="e#45482#45515#0" expanded="true" />
+            <element signature="e#47617#47650#0" expanded="true" />
+            <element signature="e#51994#51995#0" expanded="true" />
+            <element signature="e#52032#52033#0" expanded="true" />
+            <element signature="e#52108#52109#0" expanded="true" />
+            <element signature="e#52146#52147#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1978,18 +2154,29 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5041#40820#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ds/student114/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5041#40820#0" expanded="true" />
+            <element signature="e#4895#4925#0" expanded="true" />
+            <element signature="e#5060#5090#0" expanded="true" />
+            <element signature="e#5220#5245#0" expanded="true" />
+            <element signature="e#5377#5404#0" expanded="true" />
+            <element signature="e#5539#5569#0" expanded="true" />
+            <element signature="e#5701#5729#0" expanded="true" />
+            <element signature="e#5861#5887#0" expanded="true" />
+            <element signature="e#6022#6053#0" expanded="true" />
+            <element signature="e#6187#6216#0" expanded="true" />
+            <element signature="e#6301#41978#0" expanded="true" />
+            <element signature="e#11548#11581#0" expanded="true" />
+            <element signature="e#14427#14460#0" expanded="true" />
+            <element signature="e#21133#21166#0" expanded="true" />
+            <element signature="e#24260#24293#0" expanded="true" />
+            <element signature="e#33766#33799#0" expanded="true" />
+            <element signature="e#36645#36678#0" expanded="true" />
+            <element signature="e#41977#41978#0" expanded="true" />
+            <element signature="e#45482#45515#0" expanded="true" />
+            <element signature="e#47617#47650#0" expanded="true" />
+            <element signature="e#51994#51995#0" expanded="true" />
+            <element signature="e#52032#52033#0" expanded="true" />
+            <element signature="e#52108#52109#0" expanded="true" />
+            <element signature="e#52146#52147#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2012,11 +2199,123 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ds/student114/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62822086">
-          <caret line="659" column="21" selection-start-line="659" selection-start-column="21" selection-end-line="659" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5041#40820#0" expanded="true" />
+            <element signature="e#4895#4925#0" expanded="true" />
+            <element signature="e#5060#5090#0" expanded="true" />
+            <element signature="e#5220#5245#0" expanded="true" />
+            <element signature="e#5377#5404#0" expanded="true" />
+            <element signature="e#5539#5569#0" expanded="true" />
+            <element signature="e#5701#5729#0" expanded="true" />
+            <element signature="e#5861#5887#0" expanded="true" />
+            <element signature="e#6022#6053#0" expanded="true" />
+            <element signature="e#6187#6216#0" expanded="true" />
+            <element signature="e#6301#41978#0" expanded="true" />
+            <element signature="e#11548#11581#0" expanded="true" />
+            <element signature="e#14427#14460#0" expanded="true" />
+            <element signature="e#21133#21166#0" expanded="true" />
+            <element signature="e#24260#24293#0" expanded="true" />
+            <element signature="e#33766#33799#0" expanded="true" />
+            <element signature="e#36645#36678#0" expanded="true" />
+            <element signature="e#41977#41978#0" expanded="true" />
+            <element signature="e#45482#45515#0" expanded="true" />
+            <element signature="e#47617#47650#0" expanded="true" />
+            <element signature="e#51994#51995#0" expanded="true" />
+            <element signature="e#52032#52033#0" expanded="true" />
+            <element signature="e#52108#52109#0" expanded="true" />
+            <element signature="e#52146#52147#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ds/student114/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4895#4925#0" expanded="true" />
+            <element signature="e#5060#5090#0" expanded="true" />
+            <element signature="e#5220#5245#0" expanded="true" />
+            <element signature="e#5377#5404#0" expanded="true" />
+            <element signature="e#5539#5569#0" expanded="true" />
+            <element signature="e#5701#5729#0" expanded="true" />
+            <element signature="e#5861#5887#0" expanded="true" />
+            <element signature="e#6022#6053#0" expanded="true" />
+            <element signature="e#6187#6216#0" expanded="true" />
+            <element signature="e#6301#41978#0" expanded="true" />
+            <element signature="e#11548#11581#0" expanded="true" />
+            <element signature="e#14427#14460#0" expanded="true" />
+            <element signature="e#21133#21166#0" expanded="true" />
+            <element signature="e#24260#24293#0" expanded="true" />
+            <element signature="e#33766#33799#0" expanded="true" />
+            <element signature="e#36645#36678#0" expanded="true" />
+            <element signature="e#41977#41978#0" expanded="true" />
+            <element signature="e#45482#45515#0" expanded="true" />
+            <element signature="e#47617#47650#0" expanded="true" />
+            <element signature="e#51994#51995#0" expanded="true" />
+            <element signature="e#52032#52033#0" expanded="true" />
+            <element signature="e#52108#52109#0" expanded="true" />
+            <element signature="e#52146#52147#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ds/student114/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59090906">
+          <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4895#4925#0" expanded="true" />
+            <element signature="e#5060#5090#0" expanded="true" />
+            <element signature="e#5220#5245#0" expanded="true" />
+            <element signature="e#5377#5404#0" expanded="true" />
+            <element signature="e#5539#5569#0" expanded="true" />
+            <element signature="e#5701#5729#0" expanded="true" />
+            <element signature="e#5861#5887#0" expanded="true" />
+            <element signature="e#6022#6053#0" expanded="true" />
+            <element signature="e#6187#6216#0" expanded="true" />
+            <element signature="e#6301#41978#0" expanded="true" />
+            <element signature="e#11548#11581#0" expanded="true" />
+            <element signature="e#14427#14460#0" expanded="true" />
+            <element signature="e#21133#21166#0" expanded="true" />
+            <element signature="e#24260#24293#0" expanded="true" />
+            <element signature="e#33766#33799#0" expanded="true" />
+            <element signature="e#36645#36678#0" expanded="true" />
+            <element signature="e#41977#41978#0" expanded="true" />
+            <element signature="e#45482#45515#0" expanded="true" />
+            <element signature="e#47617#47650#0" expanded="true" />
+            <element signature="e#51994#51995#0" expanded="true" />
+            <element signature="e#52032#52033#0" expanded="true" />
+            <element signature="e#52108#52109#0" expanded="true" />
+            <element signature="e#52146#52147#0" expanded="true" />
           </folding>
         </state>
       </provider>

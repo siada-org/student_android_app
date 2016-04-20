@@ -1,15 +1,20 @@
 package com.ds.student114;
 
+import android.Manifest;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Typeface;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Parcelable;
 import android.provider.MediaStore;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -34,22 +39,18 @@ import com.squareup.picasso.Picasso;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URI;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
-
 
 class MyWebViewClient3 extends WebViewClient {
     @Override
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
-        if (url.contains("student-app")&&!url.contains("upload")) {
+        if (url.contains("student-app") && !url.contains("upload")) {
             view.loadUrl(url);
             return false;
-        }else{
+        } else {
             view.getContext().startActivity(
                     new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
             return true;
@@ -60,25 +61,45 @@ class MyWebViewClient3 extends WebViewClient {
 
 public class MainWindow extends AppCompatActivity {
 
-    private ValueCallback<Uri> mUploadMessage;
-    private final static int FILECHOOSER_RESULTCODE=1;
-    private Uri mCapturedImageURI = null;
-
-
     public static final int INPUT_FILE_REQUEST_CODE = 1;
     public static final String EXTRA_FROM_NOTIFICATION = "EXTRA_FROM_NOTIFICATION";
-
+    private final static int FILECHOOSER_RESULTCODE = 1;
+    public String server = "http://student-app.ru/p/";
+    ImageButton butnPhoto;
+    StringBuilder sbGPS = new StringBuilder();
+    StringBuilder sbNet = new StringBuilder();
+    private ValueCallback<Uri> mUploadMessage;
+    private Uri mCapturedImageURI = null;
     private Drawer result = null;
-
     private WebView mWebView;
-
     private ValueCallback<Uri[]> mFilePathCallback;
     private String mCameraPhotoPath;
+    private LocationManager locationManager;
+    private LocationListener locationListener = new LocationListener() {
 
-    ImageButton butnPhoto;
+        @Override
+        public void onLocationChanged(Location location) {
+            try {
+                showLocation(location);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
 
-    public String server = "http://student-app.ru/p/";
+        @Override
+        public void onProviderDisabled(String provider) {
+            checkEnabled();
+        }
 
+        @Override
+        public void onProviderEnabled(String provider) {
+            checkEnabled();
+        }
+
+        @Override
+        public void onStatusChanged(String provider, int status, Bundle extras) {
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,6 +121,21 @@ public class MainWindow extends AppCompatActivity {
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         final Typeface typeface2 = Typeface.createFromAsset(getAssets(), "fonts/ur.ttf");
+
+        locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,
+                1000 * 10, 10, locationListener);
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
 
         result = new DrawerBuilder()
                 .withActivity(this)
@@ -141,20 +177,19 @@ public class MainWindow extends AppCompatActivity {
                                 mWebView.setWebViewClient(new MyWebViewClient3());
                                 mWebView.loadUrl(server + "profile/index.php");
                                 mWebView.setWebChromeClient(new WebChromeClient() {
-                                    public void onProgressChanged(WebView view, int progress)
-                                    {
-                                        if(progress < 100 && Pbar.getVisibility() == ProgressBar.GONE){
+                                    public static final String TAG = "";
+
+                                    public void onProgressChanged(WebView view, int progress) {
+                                        if (progress < 100 && Pbar.getVisibility() == ProgressBar.GONE) {
                                             Back.setVisibility(FrameLayout.VISIBLE);
                                             Pbar.setVisibility(ProgressBar.VISIBLE);
                                         }
                                         Pbar.setProgress(progress);
-                                        if(progress == 100) {
+                                        if (progress == 100) {
                                             Pbar.setVisibility(ProgressBar.GONE);
                                             Back.setVisibility(FrameLayout.GONE);
                                         }
                                     }
-
-                                    public static final String TAG = "";
 
                                     // page loading progress, gone when fully loaded
 
@@ -280,22 +315,22 @@ public class MainWindow extends AppCompatActivity {
                                         mWebView = (WebView) findViewById(R.id.chat_webView5);
                                         mWebView.getSettings().setJavaScriptEnabled(true);
                                         mWebView.getSettings().setAllowFileAccess(true);
-                                        mWebView.loadUrl(server+"profile/add-avatar.php");
+                                        mWebView.loadUrl(server + "profile/add-avatar.php");
                                         mWebView.setWebViewClient(new MyWebViewClient3());
                                         mWebView.setWebChromeClient(new WebChromeClient() {
-                                            public void onProgressChanged(WebView view, int progress)
-                                            {
-                                                if(progress < 100 && Pbar.getVisibility() == ProgressBar.GONE){
+                                            public static final String TAG = "";
+
+                                            public void onProgressChanged(WebView view, int progress) {
+                                                if (progress < 100 && Pbar.getVisibility() == ProgressBar.GONE) {
                                                     Back.setVisibility(FrameLayout.VISIBLE);
                                                     Pbar.setVisibility(ProgressBar.VISIBLE);
                                                 }
                                                 Pbar.setProgress(progress);
-                                                if(progress == 100) {
+                                                if (progress == 100) {
                                                     Pbar.setVisibility(ProgressBar.GONE);
                                                     Back.setVisibility(FrameLayout.GONE);
                                                 }
                                             }
-                                            public static final String TAG = "";
 
                                             // page loading progress, gone when fully loaded
 
@@ -421,7 +456,7 @@ public class MainWindow extends AppCompatActivity {
                                 mWebView = (WebView) findViewById(R.id.chat_webView5);
                                 mWebView.getSettings().setJavaScriptEnabled(true);
                                 mWebView.setWebViewClient(new MyWebViewClient3());
-                                mWebView.loadUrl(server+"friends/index.php");
+                                mWebView.loadUrl(server + "friends/index.php");
                                 header.setText("Друзья");
                                 header.setTypeface(typeface);
                                 head.setImageResource(R.drawable.m_friends_s);
@@ -429,7 +464,7 @@ public class MainWindow extends AppCompatActivity {
                             } else if (drawerItem.getIdentifier() == 3) {
                                 mWebView = (WebView) findViewById(R.id.chat_webView5);
                                 mWebView.getSettings().setJavaScriptEnabled(true);
-                                mWebView.loadUrl(server+"pm/index.php");
+                                mWebView.loadUrl(server + "pm/index.php");
                                 mWebView.setWebViewClient(new MyWebViewClient3() {
                                     public void onPageFinished(WebView view, String url) {
                                         String avatarSrc = mWebView.getTitle();
@@ -468,20 +503,19 @@ public class MainWindow extends AppCompatActivity {
                                 mWebView.loadUrl(server + "works/index.php");
                                 mWebView.setWebViewClient(new MyWebViewClient3());
                                 mWebView.setWebChromeClient(new WebChromeClient() {
-                                    public void onProgressChanged(WebView view, int progress)
-                                    {
-                                        if(progress < 100 && Pbar.getVisibility() == ProgressBar.GONE){
+                                    public static final String TAG = "";
+
+                                    public void onProgressChanged(WebView view, int progress) {
+                                        if (progress < 100 && Pbar.getVisibility() == ProgressBar.GONE) {
                                             Back.setVisibility(FrameLayout.VISIBLE);
                                             Pbar.setVisibility(ProgressBar.VISIBLE);
                                         }
                                         Pbar.setProgress(progress);
-                                        if(progress == 100) {
+                                        if (progress == 100) {
                                             Pbar.setVisibility(ProgressBar.GONE);
                                             Back.setVisibility(FrameLayout.GONE);
                                         }
                                     }
-
-                                    public static final String TAG = "";
 
                                     // page loading progress, gone when fully loaded
 
@@ -627,10 +661,7 @@ public class MainWindow extends AppCompatActivity {
                                 header.setText("Поиск");
                                 header.setTypeface(typeface);
                                 head.setImageResource(R.drawable.m_search_s);
-                            }else if (drawerItem.getIdentifier() == 9) {
-
-
-
+                            } else if (drawerItem.getIdentifier() == 9) {
                                 mWebView = (WebView) findViewById(R.id.chat_webView5);
                                 mWebView.getSettings().setJavaScriptEnabled(true);
                                 mWebView.getSettings().setAllowContentAccess(true);
@@ -677,20 +708,19 @@ public class MainWindow extends AppCompatActivity {
         mWebView.setWebViewClient(new MyWebViewClient3());
         mWebView.loadUrl(server + "auth/index.php");
         mWebView.setWebChromeClient(new WebChromeClient() {
-            public void onProgressChanged(WebView view, int progress)
-            {
-                if(progress < 100 && Pbar.getVisibility() == ProgressBar.GONE){
+            public static final String TAG = "";
+
+            public void onProgressChanged(WebView view, int progress) {
+                if (progress < 100 && Pbar.getVisibility() == ProgressBar.GONE) {
                     Back.setVisibility(FrameLayout.VISIBLE);
                     Pbar.setVisibility(ProgressBar.VISIBLE);
                 }
                 Pbar.setProgress(progress);
-                if(progress == 100) {
+                if (progress == 100) {
                     Pbar.setVisibility(ProgressBar.GONE);
                     Back.setVisibility(FrameLayout.GONE);
                 }
             }
-
-            public static final String TAG = "";
 
             // page loading progress, gone when fully loaded
 
@@ -824,27 +854,26 @@ public class MainWindow extends AppCompatActivity {
         return imageFile;
     }
 
-    public void onActivityResult (int requestCode, int resultCode, Intent data) {
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
         // code for all versions except of Lollipop
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
 
-            if(requestCode==FILECHOOSER_RESULTCODE) {
+            if (requestCode == FILECHOOSER_RESULTCODE) {
                 if (null == this.mUploadMessage) {
                     return;
                 }
 
-                Uri result=null;
+                Uri result = null;
 
-                try{
+                try {
                     if (resultCode != RESULT_OK) {
                         result = null;
                     } else {
                         // retrieve from the private variable if the intent is null
                         result = data == null ? mCapturedImageURI : data.getData();
                     }
-                }
-                catch(Exception e) {
-                    Toast.makeText(getApplicationContext(), "activity :"+e, Toast.LENGTH_LONG).show();
+                } catch (Exception e) {
+                    Toast.makeText(getApplicationContext(), "activity :" + e, Toast.LENGTH_LONG).show();
                 }
 
                 mUploadMessage.onReceiveValue(result);
@@ -882,6 +911,7 @@ public class MainWindow extends AppCompatActivity {
             mFilePathCallback = null;
         } // end of code for Lollipop only
     }
+
     @Override
     public void onBackPressed() {
         if (result != null && result.isDrawerOpen()) {
@@ -893,5 +923,26 @@ public class MainWindow extends AppCompatActivity {
                 super.onBackPressed();
             }
         }
+    }
+
+    public void showLocation(Location location) throws IOException {
+        if (location == null)
+            return;
+        if (location.getProvider().equals(LocationManager.GPS_PROVIDER)) {
+            String lat = String.valueOf(location.getLatitude());
+            String lng = String.valueOf(location.getLongitude());
+            URL urlr = new URL("http://student-app.ru/map-res.php?lat=" + lat + "&lng=" + lng);
+            HttpURLConnection connection = (HttpURLConnection) urlr.openConnection();
+            if (connection.getResponseCode() == HttpURLConnection.HTTP_OK) {
+                String TAG = "ГУД";
+                Log.d(TAG, String.valueOf(urlr));
+            } else {
+                String TAG = "BAD";
+                Log.d(TAG, String.valueOf(urlr));
+            }
+        }
+    }
+
+    private void checkEnabled() {
     }
 }
